@@ -1,5 +1,5 @@
-val = [0,1,2]
-print(val[-3])
-# 0,1,2 index
-# [0,1,2]
-# -3,-2,-1 reverse index
+yes_or_no = {
+    "y":1,
+    "n":0
+}
+print(bool(yes_or_no["n"]))
