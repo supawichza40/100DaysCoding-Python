@@ -1,3 +1,4 @@
+import time
 from turtle import Turtle,Screen
 import random
 import snake
@@ -31,10 +32,16 @@ screen.onkey(fun=turn_up, key="w")
 screen.onkey(fun=turn_down, key="s")
 screen.onkey(fun=turn_left, key="a")
 screen.onkey(fun=turn_right, key="d")
+screen.tracer(0)
 
+while(True):
+    snake_obj.read_high_score_from_file()
+    while not snake_obj.is_head_touching_body() and not snake_obj.is_snake_outside_game():
+        screen.update()
+        snake_obj.forward()
+        snake_obj.is_snake_eating_dot()
+        time.sleep(0.1)
+    snake_obj.save_high_score_to_file()
+    snake_obj.restart()
 
-while(not snake_obj.is_head_touching_body() and not snake_obj.is_snake_outside_game()):
-    snake_obj.forward()
-
-    snake_obj.is_snake_eating_dot()
 screen.exitonclick()

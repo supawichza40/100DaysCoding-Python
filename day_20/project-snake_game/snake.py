@@ -7,8 +7,10 @@ class Snake:
         self.score = 0
         self.snake = []
         self.error_rate = 10
+        self.high_score = 0
         self.score_gui = self.update_score()
         self.random_circle = self.generate_random_circle()
+
         for _ in range(3):
             segment = Turtle()
             segment.penup()
@@ -16,6 +18,33 @@ class Snake:
             segment.shape("square")
             segment.goto(len(self.snake) * -10, 0)
             self.snake.append(segment)
+    def restart(self):
+        if self.score>self.high_score:
+            self.high_score = self.score
+        self.score = 0
+        for i in range(len(self.snake)):
+            self.snake[i].clear()
+        self.snake = []
+        for _ in range(3):
+            segment = Turtle()
+            segment.penup()
+            segment.color("white")
+            segment.shape("square")
+            segment.goto(len(self.snake) * -10, 0)
+            self.snake.append(segment)
+
+    def save_high_score_to_file(self):
+        with open("high_score.txt","w") as high_score:
+            high_score.write(str(self.high_score))
+
+    def read_high_score_from_file(self):
+        with open("high_score.txt","r") as high_score:
+            content = high_score.read()
+            if(content!=""):
+                self.high_score = int(content)
+            else:
+                pass
+
 
     def add_new_snake_segment(self):
         for _ in range(1):
@@ -64,7 +93,7 @@ class Snake:
         style = ('Courier', 30, 'italic')
         timmy = Turtle()
         timmy.color("deep pink")
-        timmy.write(f'Score: {self.score}', font=style, align='center')
+        timmy.write(f'Score: {self.score} HighScore:{self.high_score}', font=style, align='center')
         timmy.hideturtle()
         return timmy
     def is_snake_eating_dot(self):
