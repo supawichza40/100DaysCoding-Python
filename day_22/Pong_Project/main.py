@@ -66,6 +66,7 @@ while True:
     ball = Ball()
     while game_is_on:
         screen.update()
+        user_paddle.move_up_or_down_auto(ball.ycor())
         comp_paddle.move_up_or_down_auto(ball.ycor())
         ball.is_forward_or_backward()
         scoreboard.update_scoreboard()
