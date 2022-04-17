@@ -9,12 +9,17 @@
 
 with open("./Input/Names/invited_names.txt") as name:
     with open("./Input/Letters/starting_letter.txt") as letter:
+        letter_content = letter.read()
+        name_content = name.readline()
 
-        name = name.readline()
-        while(name!=""):
-            letter_content = letter.read()
-            letter_content.replace(__old= "name" ,__new=name)
-            with open(f"letter_to_{name}.txt","w") as letter_save:
-                letter_save.write(letter_content)
+        while(name_content!=""):
+            
+            name_removed_n = name_content.strip("\n")
+            with open(f"./Output/ReadyToSend/{name_removed_n}.txt","w") as new_letter:
+                new_content = letter_content.replace("[name]",name_removed_n)
+                new_letter.write(new_content)
+                name_content = name.readline()
+
+
 
 
