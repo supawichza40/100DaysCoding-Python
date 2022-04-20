@@ -1,0 +1,406 @@
+[
+    {
+        "English": "part",
+        "French": "partie"
+    },
+    {
+        "English": "history",
+        "French": "histoire"
+    },
+    {
+        "English": "search",
+        "French": "chercher"
+    },
+    {
+        "English": "only",
+        "French": "seulement"
+    },
+    {
+        "English": "police",
+        "French": "police"
+    },
+    {
+        "English": "thought",
+        "French": "pensais"
+    },
+    {
+        "English": "help",
+        "French": "aide"
+    },
+    {
+        "English": "request",
+        "French": "demande"
+    },
+    {
+        "English": "kind",
+        "French": "genre"
+    },
+    {
+        "English": "month",
+        "French": "mois"
+    },
+    {
+        "English": "brother",
+        "French": "fr\u00e8re"
+    },
+    {
+        "English": "let",
+        "French": "laisser"
+    },
+    {
+        "English": "because",
+        "French": "car"
+    },
+    {
+        "English": "to put",
+        "French": "mettre"
+    },
+    {
+        "English": "no",
+        "French": "aucun"
+    },
+    {
+        "English": "leash",
+        "French": "laisse"
+    },
+    {
+        "English": "them",
+        "French": "eux"
+    },
+    {
+        "English": "city",
+        "French": "ville"
+    },
+    {
+        "English": "each",
+        "French": "chaque"
+    },
+    {
+        "English": "speak",
+        "French": "parl\u00e9"
+    },
+    {
+        "English": "come",
+        "French": "arriv\u00e9"
+    },
+    {
+        "English": "should",
+        "French": "devrait"
+    },
+    {
+        "English": "baby",
+        "French": "b\u00e9b\u00e9"
+    },
+    {
+        "English": "long time",
+        "French": "longtemps"
+    },
+    {
+        "English": "hours",
+        "French": "heures"
+    },
+    {
+        "English": "will",
+        "French": "vont"
+    },
+    {
+        "English": "while",
+        "French": "pendant"
+    },
+    {
+        "English": "meet again",
+        "French": "revoir"
+    },
+    {
+        "English": "any",
+        "French": "aucune"
+    },
+    {
+        "English": "square",
+        "French": "place"
+    },
+    {
+        "English": "speak",
+        "French": "parle"
+    },
+    {
+        "English": "understood",
+        "French": "compris"
+    },
+    {
+        "English": "knew",
+        "French": "savais"
+    },
+    {
+        "English": "were",
+        "French": "\u00e9taient"
+    },
+    {
+        "English": "Warning",
+        "French": "attention"
+    },
+    {
+        "English": "here is",
+        "French": "voici"
+    },
+    {
+        "English": "could",
+        "French": "pourrais"
+    },
+    {
+        "English": "case",
+        "French": "affaire"
+    },
+    {
+        "English": "give",
+        "French": "donner"
+    },
+    {
+        "English": "type",
+        "French": "type"
+    },
+    {
+        "English": "their",
+        "French": "leurs"
+    },
+    {
+        "English": "given",
+        "French": "donn\u00e9"
+    },
+    {
+        "English": "train",
+        "French": "train"
+    },
+    {
+        "English": "body",
+        "French": "corps"
+    },
+    {
+        "English": "place",
+        "French": "endroit"
+    },
+    {
+        "English": "eyes",
+        "French": "yeux"
+    },
+    {
+        "English": "way",
+        "French": "fa\u00e7on"
+    },
+    {
+        "English": "listen",
+        "French": "\u00e9coute"
+    },
+    {
+        "English": "whose",
+        "French": "dont"
+    },
+    {
+        "English": "find",
+        "French": "trouve"
+    },
+    {
+        "English": "first",
+        "French": "premier"
+    },
+    {
+        "English": "lost",
+        "French": "perdu"
+    },
+    {
+        "English": "hand",
+        "French": "main"
+    },
+    {
+        "English": "first",
+        "French": "premi\u00e8re"
+    },
+    {
+        "English": "side",
+        "French": "c\u00f4t\u00e9"
+    },
+    {
+        "English": "power",
+        "French": "pouvoir"
+    },
+    {
+        "English": "old",
+        "French": "vieux"
+    },
+    {
+        "English": "be",
+        "French": "sois"
+    },
+    {
+        "English": "here",
+        "French": "tiens"
+    },
+    {
+        "English": "morning",
+        "French": "matin"
+    },
+    {
+        "English": "so much",
+        "French": "tellement"
+    },
+    {
+        "English": "child",
+        "French": "enfant"
+    },
+    {
+        "English": "point",
+        "French": "point"
+    },
+    {
+        "English": "came",
+        "French": "venu"
+    },
+    {
+        "English": "after",
+        "French": "suite"
+    },
+    {
+        "English": "sorry",
+        "French": "pardon"
+    },
+    {
+        "English": "come",
+        "French": "venez"
+    },
+    {
+        "English": "in front of",
+        "French": "devant"
+    },
+    {
+        "English": "towards",
+        "French": "vers"
+    },
+    {
+        "English": "minutes",
+        "French": "minutes"
+    },
+    {
+        "English": "request",
+        "French": "demand\u00e9"
+    },
+    {
+        "English": "bedroom",
+        "French": "chambre"
+    },
+    {
+        "English": "placed",
+        "French": "mis"
+    },
+    {
+        "English": "beautiful",
+        "French": "belle"
+    },
+    {
+        "English": "law",
+        "French": "droit"
+    },
+    {
+        "English": "would like to",
+        "French": "aimerais"
+    },
+    {
+        "English": "today",
+        "French": "aujourd'hui"
+    },
+    {
+        "English": "husband",
+        "French": "mari"
+    },
+    {
+        "English": "cause",
+        "French": "cause"
+    },
+    {
+        "English": "finally",
+        "French": "enfin"
+    },
+    {
+        "English": "hope",
+        "French": "esp\u00e8re"
+    },
+    {
+        "English": "water",
+        "French": "eau"
+    },
+    {
+        "English": "Wait",
+        "French": "attendez"
+    },
+    {
+        "English": "left",
+        "French": "parti"
+    },
+    {
+        "English": "new",
+        "French": "nouvelle"
+    },
+    {
+        "English": "job",
+        "French": "boulot"
+    },
+    {
+        "English": "Stop",
+        "French": "arr\u00eater"
+    },
+    {
+        "English": "would say",
+        "French": "dirait"
+    },
+    {
+        "English": "Earth",
+        "French": "terre"
+    },
+    {
+        "English": "account",
+        "French": "compte"
+    },
+    {
+        "English": "given",
+        "French": "donne"
+    },
+    {
+        "English": "far",
+        "French": "loin"
+    },
+    {
+        "English": "end",
+        "French": "fin"
+    },
+    {
+        "English": "believe",
+        "French": "croire"
+    },
+    {
+        "English": "sweetheart",
+        "French": "ch\u00e9rie"
+    },
+    {
+        "English": "large",
+        "French": "gros"
+    },
+    {
+        "English": "rather",
+        "French": "plut\u00f4t"
+    },
+    {
+        "English": "will have",
+        "French": "aura"
+    },
+    {
+        "English": "girls",
+        "French": "filles"
+    },
+    {
+        "English": "to play",
+        "French": "jouer"
+    },
+    {
+        "English": "office",
+        "French": "bureau"
+    }
+]
