@@ -5,11 +5,10 @@
 # 2. Check if today matches a birthday in the birthdays.csv
 import random
 import smtplib
-from dotenv import load_dotenv
 import pandas
 import datetime as dt
-import os
-load_dotenv()
+EMAIL = "supapython100days@gmail.com"
+PASSWORD = "Kingza40"
 data = pandas.read_csv("birthdays.csv")
 dict_result = {(d["day"],d["month"]):d for index,d in data.iterrows()}
 today = dt.datetime.now()
@@ -24,11 +23,11 @@ if (day,month) in dict_result:
     with open(file=f"letter_templates/letter_{random_letter}.txt",mode="r") as reader:
         wish = reader.read()
     named_letter = wish.replace("[NAME]",name)
-    print(os.getenv("EMAIL"),os.getenv("PASSWORD"))
+    print(EMAIL,PASSWORD)
     with smtplib.SMTP("smtp.gmail.com") as connection:
         connection.starttls()
-        connection.login(user=os.getenv("EMAIL"),password=os.getenv("PASSWORD"))
-        connection.sendmail(from_addr=os.getenv("EMAIL"),to_addrs=email,msg=f"Subject: Happy Birth Day {name}\n\n{named_letter}")
+        connection.login(user=EMAIL,password=PASSWORD)
+        connection.sendmail(from_addr=EMAIL,to_addrs=email,msg=f"Subject: Happy Birth Day {name}\n\n{named_letter}")
 # 3. If step 2 is true, pick a random letter from letter templates and replace the [NAME] with the person's actual name from birthdays.csv
 
 # 4. Send the letter generated in step 3 to that person's email address.
