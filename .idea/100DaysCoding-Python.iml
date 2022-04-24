@@ -4,8 +4,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/day_36-stock_market_new_alert" />
+      <excludeFolder url="file://$MODULE_DIR$/day_37-API Post Request &amp; Header, Habit Tracker Project/habit-tracker/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/day_38-natural_language-exercise_tracker/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (100DaysCoding-Python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (100DaysCoding-Python) (2)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
