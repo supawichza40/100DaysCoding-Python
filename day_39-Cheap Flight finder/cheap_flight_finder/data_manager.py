@@ -1,5 +1,5 @@
 import requests
-SHEETY_API = "https://api.sheety.co/6bf89e618b169825115afd3db08d232d/supavichFlight/prices"
+SHEETY_API = "https://api.sheety.co/fa807dd62c9140ef1ce1572604d87ac2/copyOfSupavichFlight/prices"
 TEQUILA_API_KEY = "NYs2Z9tzLUWJOtTOFfwBGbKOMPs_w7tD"
 TEQUILA_LOCATION_END_POINT = "https://tequila-api.kiwi.com/locations/query"
 header = {
@@ -30,3 +30,6 @@ class DataManager:
             }
             response = requests.put(url=f"{SHEETY_API}/{d['id']}", json=dat)
             print(response.json())
+
+    def get_flight_data(self):
+        return self.sheetly_flight_data
