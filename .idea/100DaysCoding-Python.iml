@@ -7,8 +7,9 @@
       <excludeFolder url="file://$MODULE_DIR$/day_37-API Post Request &amp; Header, Habit Tracker Project/habit-tracker/venv" />
       <excludeFolder url="file://$MODULE_DIR$/day_38-natural_language-exercise_tracker/venv" />
       <excludeFolder url="file://$MODULE_DIR$/day_39-Cheap Flight finder/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/day_48-selenium web automation/selenium/Treatwell Sign Up/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.10 (100DaysCoding-Python) (3)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.10 (100DaysPythonCoding)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
