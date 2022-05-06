@@ -1,3 +1,8 @@
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+import time
+
 import requests
 
 QUESTIONAIRE_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfA4kH_SV9P4MFB2wAfja4ep5E_Zflmx3JfEvZGIN4YT3uMKQ/viewform?usp=sf_link"
@@ -13,9 +18,24 @@ places_price = soup.find_all(class_='list-card-price')
 places_link = soup.select(selector='div.list-card-info > a')
 places_address = soup.select(selector='div.list-card-info > a > address')
 places_price_list = [price.text for price in places_price]
-places_link_list = [link.text for link in places_link]
+places_link_list = [link.get("href") for link in places_link]
 places_address_list = [address.text for address in places_address]
 print(places_address_list,places_link_list,places_price_list)
 print("Test")
+
+chrome_driver_path = "C:\Work\Development\chromedriver.exe"
+for index in range(0,len(places_address_list)):
+
+    driver = webdriver.Chrome(executable_path=chrome_driver_path)
+    driver.get(url=QUESTIONAIRE_LINK)
+    address_input = driver.find_element(by=By.CSS_SELECTOR,value='#mG61Hd > div.RH5hzf.RLS9Fe > div > div.o3Dpx > div:nth-child(1) > div > div > div.AgroKb > div > div.aCsJod.oJeWuf > div > div.Xb9hP > input')
+    price_input = driver.find_element(by=By.CSS_SELECTOR,value='#mG61Hd > div.RH5hzf.RLS9Fe > div > div.o3Dpx > div:nth-child(2) > div > div > div.AgroKb > div > div.aCsJod.oJeWuf > div > div.Xb9hP > input')
+    link_input = driver.find_element(by=By.CSS_SELECTOR,value='#mG61Hd > div.RH5hzf.RLS9Fe > div > div.o3Dpx > div:nth-child(3) > div > div > div.AgroKb > div > div.aCsJod.oJeWuf > div > div.Xb9hP > input')
+    submit_btn = driver.find_element(by=By.CSS_SELECTOR,value='#mG61Hd > div.RH5hzf.RLS9Fe > div > div.ThHDze > div.DE3NNc.CekdCb > div.lRwqcd > div > span > span')
+    address_input.send_keys(places_address_list[index])
+    price_input.send_keys(places_price_list[index])
+    link_input.send_keys(places_link_list[index])
+    submit_btn.click()
+    time.sleep(2)
 
 #path //*[@id="grid-search-results"]/ul
