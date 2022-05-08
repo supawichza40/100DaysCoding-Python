@@ -3,7 +3,7 @@ from markupsafe import escape
 import requests
 
 app = Flask(__name__)
-
+print("Dear")
 @app.route("/blog")
 def blog():
     blog_response = requests.get(url="https://api.npoint.io/c790b4d5cab58020d391")
