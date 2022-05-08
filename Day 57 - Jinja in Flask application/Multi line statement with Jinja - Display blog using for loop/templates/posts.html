@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Posts</h1>
+    {% for post in posts %}
+    <h2>Title:{{post["title"]}}</h2>
+    <h3>Subtitle:{{post["subtitle"]}}</h3>
+    <h5>Description:{{post["body"]}}</h5>
+    {% endfor %}
+  </body>
+</html>
