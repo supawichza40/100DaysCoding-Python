@@ -9,9 +9,10 @@ def calculate_second(date_data):
     return seconds
 
 
-start_time = datetime.now()
+start_time_bottle = datetime.now()
+start_time_quick_foot = datetime.now()
 time.sleep(1)
-y_coord_lists = [704,750,792,837,880]
+y_coord_lists = [704,750,792,837,880] 
 
 while(True):
     counter =3
@@ -25,17 +26,17 @@ while(True):
             pydirectinput.keyUp(key="ctrlleft")
             
         counter+=1
-            
+
     current_time = datetime.now()
-    time_pass =  calculate_second(current_time) - calculate_second(start_time)
-    print(time_pass)
+    time_pass_bottle =  calculate_second(current_time) - calculate_second(start_time_bottle)
+
     
     
-    if int(time_pass)>35:
+    if int(time_pass_bottle)>35:
         print("Pressing buttle")
         pydirectinput.keyDown(key="ctrlleft")
         pydirectinput.press(keys="f8")
         pydirectinput.keyUp(key="ctrlleft")
-        start_time = datetime.now()
+        start_time_bottle = datetime.now()
 
     
