@@ -1,9 +1,16 @@
 import pyautogui
 import time
 import pydirectinput
-from datetime import datetime 
+from datetime import datetime
+
+def calculate_second(date_data):
+    t = date_data.time()
+    seconds = (t.hour * 60 + t.minute) * 60 + t.second
+    return seconds
+
+
 start_time = datetime.now()
-time.sleep(5)
+time.sleep(1)
 y_coord_lists = [704,750,792,837,880]
 
 while(True):
@@ -16,12 +23,19 @@ while(True):
             pydirectinput.keyDown(key='ctrlleft')
             pydirectinput.press(keys=f"f{counter}")
             pydirectinput.keyUp(key="ctrlleft")
+            
         counter+=1
-                        # if (int(datetime.now().second - start_time.second)>35):
-                            
-                        #     pydirectinput.keyDown(key="ctrlleft")
-                        #     pydirectinput.press(keys="f9")
-                        #     pydirectinput.keyUp(key="ctrlleft")
-                        #     start_time = datetime.now()
+            
+    current_time = datetime.now()
+    time_pass =  calculate_second(current_time) - calculate_second(start_time)
+    print(time_pass)
+    
+    
+    if int(time_pass)>35:
+        print("Pressing buttle")
+        pydirectinput.keyDown(key="ctrlleft")
+        pydirectinput.press(keys="f8")
+        pydirectinput.keyUp(key="ctrlleft")
+        start_time = datetime.now()
 
     
